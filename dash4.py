@@ -8,4 +8,4 @@ df = pd.read_csv("customer_data.csv")
 # Let's get a KPI for Average Purchase Value
 # We can add a pie chart for Preferred Payment Method
 
-st.metric("Average Purchase Value:", f"${df['AveragePurchaseValue'].average():,.2f}")
+st.metric("Average Purchase Value:", f"${df['AveragePurchaseValue'].sum():,.2f}")
